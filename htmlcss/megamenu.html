@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            border: 1px solid bisque;
+        }
+        .nav{
+            width: 90%;
+            height: 50px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .nav ul li{
+          list-style: none;
+          float:left;
+          width: 20%;
+          text-align: center;
+          line-height: 50px;
+          background-color: cadetblue;
+        }
+        .nav ul li:hover{
+            background-color:cyan;
+        }
+        .mega{
+            width: 100%;
+            height: 500px;
+            background-color: chocolate;
+            position: absolute;
+            top:50px;
+            left:0;
+            display: none;
+        }
+        .nav ul li:hover .mega {
+            display: block;
+        }
+        .img,.list{
+            width: 35%;
+            height: 400px;
+            margin-top:50px;
+            margin-left:10%;
+            background-color: coral;
+            float: left;
+        }
+        /* .list{
+            width: 35%;
+            height: 70;
+        } */
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About
+                    <div class="mega">
+                            <div class="img">
+
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>Java</li>
+                                    <li>.Net</li>
+                                    <li>Python</li>
+                                    <li>Java script</li>
+                                    <li>cc++</li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li>Contact</li>
+                <li>Service</li>
+                <li>Support</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
