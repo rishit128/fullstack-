@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .parent{
+            width: 500px;
+            height: 300px;
+            border-radius: 25px;
+            background-color: aqua;
+            margin: 200px auto;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+        }
+        .left{
+            width: 30%;
+            height:300px;
+            background-color: black;
+
+        }
+        .right{
+            width: 70%;
+            height:300px;
+            background-color: cadetblue;
+
+        }
+        .round{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 5px solid white;
+            position: absolute;
+            left:30%;
+            top:30px;
+            transform: translate(-50%);
+            background-image: linear-gradient(yellow,orange);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .round i{
+            font-size:30px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="round">
+            <i class="fa fa-user-o"></i>
+        </div>
+    </div>
+</body>
+</html>
